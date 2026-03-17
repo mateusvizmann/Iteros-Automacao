@@ -52,8 +52,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tighter leading-[0.95] mb-6"
             >
-              Automatize tarefas repetitivas com{" "}
-              <span className="text-gradient">Python</span> e economize horas toda semana
+              Automatize tarefas repetitivas e economize horas toda semana.
             </motion.h1>
 
             <motion.p
