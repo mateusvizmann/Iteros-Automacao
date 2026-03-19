@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Clock, ShieldCheck, TrendingUp, Zap, Expand } from "lucide-react";
+import { WHATSAPP } from "@/config";
 
-const WHATSAPP_URL =
-  "https://wa.me/5543988552365?text=Ola%2C%20vim%20pelo%20site%20e%20quero%20automatizar%20processos%20na%20minha%20empresa";
+const WHATSAPP_URL = WHATSAPP.url;
 
 const benefits = [
   { icon: Clock, title: "Economia de tempo", desc: "Até 20h por semana devolvidas para sua equipe." },
