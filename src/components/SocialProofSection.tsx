@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
-const isMobile = /iPhone|Android/i.test(navigator.userAgent);
-const WHATSAPP_URL = isMobile
-  ? "https://wa.me/5543988552365?text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python"
-  : "https://web.whatsapp.com/send?phone=5543988552365&text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python";
+const WHATSAPP_URL =
+  "https://wa.me/5543988552365?text=Ola%2C%20vim%20pelo%20site%20e%20quero%20automatizar%20processos%20na%20minha%20empresa";
 
 const testimonials = [
   {
