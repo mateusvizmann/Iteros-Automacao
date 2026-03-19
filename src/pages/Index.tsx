@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import ProcessSection from "@/components/ProcessSection";
 import SocialProofSection from "@/components/SocialProofSection";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Index() {
   return (
@@ -9,7 +9,7 @@ export default function Index() {
       <HeroSection />
       <ProcessSection />
       <SocialProofSection />
-      <WhatsAppFloat />
+      <WhatsAppButton />
       <footer className="border-t border-foreground/5 py-8">
         <div className="container">
           <p className="text-xs text-muted-foreground text-center font-mono">
