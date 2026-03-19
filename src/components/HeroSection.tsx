@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { FileSpreadsheet, BarChart3, Mail, Globe, FolderOpen, Plug, Bot, Settings } from "lucide-react";
 import { WHATSAPP } from "@/config";
-
+ 
 const WHATSAPP_URL = WHATSAPP.url;
-
+ 
 const services = [
   { icon: FileSpreadsheet, title: "Automação de Planilhas", desc: "Elimine o Ctrl+C / Ctrl+V entre Excel e Google Sheets." },
   { icon: BarChart3, title: "Relatórios Automáticos", desc: "Geração e envio de relatórios sem intervenção humana." },
@@ -14,7 +14,7 @@ const services = [
   { icon: Bot, title: "Bots para Tarefas", desc: "Robôs que executam rotinas repetitivas 24/7." },
   { icon: Settings, title: "Processos Administrativos", desc: "Automatize cadastros, notas fiscais e backoffice." },
 ];
-
+ 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
@@ -22,14 +22,30 @@ const fadeUp = {
     transition: { delay: i * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }
   }),
 };
-
+ 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Radial glow */}
       <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-primary/10 rounded-full blur-[120px]" />
-
-      <div className="container relative pt-24 pb-20 lg:pt-32">
+ 
+      <div className="container relative pt-12 pb-20 lg:pt-16">
+ 
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center gap-3 mb-10"
+        >
+          <img
+            src="/logo.png"
+            alt="Iteros Automação"
+            className="h-12 w-auto"
+          />
+          <span className="text-lg font-bold tracking-tight">Iteros Automação</span>
+        </motion.div>
+ 
         {/* Status indicator */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -43,7 +59,7 @@ export default function HeroSection() {
           </span>
           <span className="font-mono text-xs text-muted-foreground tracking-wide">System Status: Optimized</span>
         </motion.div>
-
+ 
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           {/* Left: text */}
           <div className="lg:col-span-7">
@@ -55,7 +71,7 @@ export default function HeroSection() {
             >
               Automatize tarefas repetitivas e economize horas toda semana.
             </motion.h1>
-
+ 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,7 +80,7 @@ export default function HeroSection() {
             >
               Criamos automações inteligentes para eliminar processos manuais, reduzir erros e aumentar a produtividade da sua equipe.
             </motion.p>
-
+ 
             <motion.a
               href={WHATSAPP_URL}
               target="_blank"
@@ -76,7 +92,7 @@ export default function HeroSection() {
             >
               Falar no WhatsApp
             </motion.a>
-
+ 
             {/* Proof metrics */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -96,7 +112,7 @@ export default function HeroSection() {
               ))}
             </motion.div>
           </div>
-
+ 
           {/* Right: terminal */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -129,7 +145,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
         </div>
-
+ 
         {/* Services grid */}
         <div className="mt-24">
           <motion.h2
