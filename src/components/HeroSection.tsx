@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FileSpreadsheet, BarChart3, Mail, Globe, FolderOpen, Plug, Bot, Settings } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/5543988552365?text=Olá!%20Me%20interessei%20pelos%20serviços%20de%20automação%20da%20sua%20empresa.%20Gostaria%20de%20saber%20mais%20sobre%20como%20posso%20otimizar%20os%20processos%20do%20meu%20negócio.";
+const WHATSAPP_URL = "https://wa.me/5543988552365?text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python";
 
 const services = [
   { icon: FileSpreadsheet, title: "Automação de Planilhas", desc: "Elimine o Ctrl+C / Ctrl+V entre Excel e Google Sheets." },
