@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Clock, ShieldCheck, TrendingUp, Zap, Expand } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/5543988552365?text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python";
+const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+const WHATSAPP_URL = isMobile
+  ? "https://wa.me/5543988552365?text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python"
+  : "https://web.whatsapp.com/send?phone=5543988552365&text=Ola%2C%20gostaria%20de%20saber%20mais%20sobre%20automacao%20com%20Python";
 
 const benefits = [
   { icon: Clock, title: "Economia de tempo", desc: "Até 20h por semana devolvidas para sua equipe." },
